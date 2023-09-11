@@ -25,6 +25,8 @@ RSpec.describe Market do
     expect(market.name).to eq("Cherry Creek Farmers Market")
     expect(market.city).to eq("Denver")
     expect(market.state).to eq("CO")
+    expect(market.street).to eq("E. 1st Ave. and University Blvd.")
+    expect(market.zip).to eq("80206")
     end
   end
 end

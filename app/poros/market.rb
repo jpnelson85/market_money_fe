@@ -9,5 +9,7 @@ class Market
     @name = data[:attributes][:name]
     @city = data[:attributes][:city]
     @state = data[:attributes][:state]
+    @street = data[:attributes][:street]
+    @zip = data[:attributes][:zip]
   end
 end

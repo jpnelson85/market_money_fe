@@ -6,9 +6,9 @@ RSpec.describe 'Markets index page' do
       visit '/markets'
 
       expect(page).to have_content('Markets')
-      expect(page).to have_content('Name')
-      expect(page).to have_content('City')
-      expect(page).to have_content('State')
+      expect(page).to have_content("14&U Farmers' Market")
+      expect(page).to have_content('Washington')
+      expect(page).to have_content('District of Columbia')
     end
 
     it 'I see a button to get more info about each market', :vcr do
@@ -17,7 +17,7 @@ RSpec.describe 'Markets index page' do
       expect(page).to have_button('More Info')
       click_button('More Info', match: :first)
 
-      expect(current_path).to eq('/markets/1')
+      expect(current_path).to eq('/markets/322458')
     end
   end
 end
